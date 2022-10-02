@@ -17,8 +17,8 @@ using namespace std;//cout是在它底下
 //integer
 int main()//程式進入點 (主) 小括號是函數
 { //哪開始哪結束
-	
-	cout << "HI\n";
+	std::cout << "HI\n"; //如果前面沒有using namespace std;這行，就要加
+	cout << "HI\n";//輸出 \n是換行
 	return 0;//結束程式 0是給執行的工具看
 	
 }
