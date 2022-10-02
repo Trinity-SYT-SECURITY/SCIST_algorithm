@@ -11,7 +11,7 @@
 
 初始程式:
 ```cpp
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
 int main()
@@ -21,4 +21,7 @@ int main()
 	
 }
 ```
+![image](https://user-images.githubusercontent.com/96654161/193435456-b9c7a69a-c7de-476c-b2da-150b4b828403.png)
+
+需要compile轉換才能讓電腦讀懂你寫的程式
 
