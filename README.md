@@ -236,3 +236,44 @@ int main()
 ![image](https://user-images.githubusercontent.com/96654161/193438096-2b54dbf6-2c2e-4ef6-8fd5-0a26d36d8ce3.png)
 
 ![image](https://user-images.githubusercontent.com/96654161/193438000-069e753d-a2a3-4931-a8ba-e19a06dff356.png)
+
+### 第二節 作業三(必做)
+
+– 輸入 –
+
+輸入為一個非負整數 x 代表流入的魔力量。
+
+– 輸出 –
+
+輸出 x
+2 的個位數。
+
+– 輸入限制 –
+• 0 ≤ x ≤ 16, 384
+
+```cpp
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+	int X; //儲存整數類型變數
+	cin >> X;
+	int ALL = pow(X,2);
+	
+	int take = ALL % 10;
+	
+    cout <<take<< endl;
+	return 0;
+	
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193438576-04b8553f-5101-4b18-b21f-fde75f1ea063.png)
+
+![image](https://user-images.githubusercontent.com/96654161/193438544-434c8142-1ba0-4ebc-b3f4-0a110866cb88.png)
+
+
