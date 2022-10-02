@@ -112,7 +112,7 @@ int main()
 {
 	int a,b; //儲存整數類型變數
 	cin >> a >> b; //輸入
-    cout << "Do you want to say "<< a <<" and "<< b <<" ??\n";
+        cout << "Do you want to say "<< a <<" and "<< b <<" ??\n";
 	return 0;
 	
 }
@@ -121,3 +121,42 @@ int main()
 ![image](https://user-images.githubusercontent.com/96654161/193437078-9b256860-d4e5-4a57-aa04-7b99153dd739.png)
 
 ![image](https://user-images.githubusercontent.com/96654161/193437054-1aba9279-92de-4a51-b517-c443fedea9e2.png)
+
+### 題目三
+– 輸入 –
+
+輸入兩個正整數 a 和 b，數字用來代表你或你朋友。先出現的數字表示是上次優先的。
+
+– 輸出 –
+
+輸出下次的優先順序。先輸出的數字表示較優先。
+
+– 輸入限制 –
+
+• a, b ≤ 1000
+• a ̸= b
+
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a; //儲存整數類型變數
+	int b;
+	int c;
+	
+	cin >> a >> b; //輸入
+	
+	c = a;
+        a = b;
+	b = c;
+	
+        cout << a <<" " << b << endl;
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193437418-5828d3bb-893b-4c9d-8731-5122e5513dee.png)
+![image](https://user-images.githubusercontent.com/96654161/193437426-0fb011c3-a02e-4aac-951b-1b5656844df4.png)
