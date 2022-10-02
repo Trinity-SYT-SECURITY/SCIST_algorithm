@@ -744,7 +744,7 @@ int main(){
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193446474-eb5dcdfa-a190-4f06-a432-81a487caaf5c.png)
 
-### ### 第三節 作業三(必做)
+### 第三節 作業三(必做)
 
 – 輸入 –
 
@@ -759,4 +759,65 @@ int main(){
 • 1 ≤ a ≤ b ≤ 2, 147, 483, 647
 
 • 1 ≤ n ≤ 2, 147, 483, 647
+
+通常會有個上限和下限，而掉在範圍內的，就說是落在守備範圍內。例如要求智商介於 50 到 120 之間，那麼 70 落在守備範圍內，而 130 不是。
+給予上限、下限和目標數值，請判斷是否落在守備範圍內。
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	int a,b,n;
+	cin >> a >> b >> n;
+	
+	if (a<=n && b>=n) //不可寫成a<=n<=b
+//在大多數語言，a<=n<=b 會被視為 (a<=n)<=b 
+//python倒是可以這樣寫(a<=n<=b)，不過在後台也是自動轉回(a<=n && b>=n)
+	{
+		cout << "yes"<<"\n";
+	}
+	else
+	{
+		cout << "no"<<"\n";
+	}
+	
+	return 0;
+	
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193447701-66abffd0-54db-43c2-b2f1-3ae04bac853e.png)
+
+
+### 第三節 作業四(必做)
+
+– 輸入 –
+
+輸入為一個正整數 s 代表分數。
+
+– 輸出 –
+
+輸出 s 所代表的階級。
+
+– 輸入限制 –
+
+• 0 ≤ s ≤ 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
