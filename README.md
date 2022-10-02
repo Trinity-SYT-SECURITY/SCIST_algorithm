@@ -206,10 +206,33 @@ int main()
 Every year, Pumpkin Pete comes up with a couple of different Jack-O’-Lantern ideas for his annual Halloween special. He stacks them up on haystacks for everyone to enjoy and take pictures with. To make sure that there’s a wide variety of displays, he wants to make sure many possible Jack-O’-Lanterns designs are available. He has come up with many eye, nose, and mouth designs and would like to know how many unique designs are possible. He needs your help to set up the displays before the special kicks off!
 
 **Input**
+
 The input consists of one line which contains three integers. The first,**N**, indicates the number of eye designs. The second,**T**, indicates the number of nose designs. The third, **M** indicates the number of mouth designs. All three values are in the range [1,500].
 
 **Output**
+
 Output a single line containing the number of different possible Jack-O’-Lantern designs.
 
+![image](https://user-images.githubusercontent.com/96654161/193438082-af0c63fe-3071-40f8-ac46-b165a23154ce.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int N; //儲存整數類型變數
+	int T;
+	int M;
+	int ALL;
+	cin >> N >> T >> M;
+	ALL = N*T*M;
+	
+    cout <<ALL<< endl;
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193438096-2b54dbf6-2c2e-4ef6-8fd5-0a26d36d8ce3.png)
 
 ![image](https://user-images.githubusercontent.com/96654161/193438000-069e753d-a2a3-4931-a8ba-e19a06dff356.png)
