@@ -24,7 +24,7 @@
 
 > 把問題算對，最短時間完成
 
-初始程式:
+## 輸出範例:
 ```cpp
 #include <iostream> 
 using namespace std;//cout是在它底下
@@ -67,7 +67,7 @@ int main()
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193436295-26241663-e2f5-4037-873c-fbc9880aef6d.png)
 
-### 題目一
+### day1 作業一
 
 **Input**
 There is no input for this problem.
@@ -77,7 +77,7 @@ Output should contain one line, containing the string “Hello World!”.
 
 ![image](https://user-images.githubusercontent.com/96654161/193436426-7b090c1e-a835-4d04-93ba-b33dd07f0c34.png)
 
-#### 輸入
+## 輸入範例
 
 ```
 #include <iostream>
@@ -95,7 +95,7 @@ int main()
 }
 ```
 
-### 題目二
+### day1 作業二
 – 輸入 –
 
 輸入兩個整數 a 和 b 代表要複述的整數。
@@ -126,7 +126,7 @@ int main()
 
 ![image](https://user-images.githubusercontent.com/96654161/193437054-1aba9279-92de-4a51-b517-c443fedea9e2.png)
 
-### 題目三
+### day1 作業三
 – 輸入 –
 
 輸入兩個正整數 a 和 b，數字用來代表你或你朋友。先出現的數字表示是上次優先的。
@@ -164,3 +164,38 @@ int main()
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193437418-5828d3bb-893b-4c9d-8731-5122e5513dee.png)
 ![image](https://user-images.githubusercontent.com/96654161/193437426-0fb011c3-a02e-4aac-951b-1b5656844df4.png)
+
+### day1 作業四
+– 輸入 –
+
+輸入兩個正整數 m 和 p，代表你手上擁有 m 元，以及遊戲賣價 p 元。
+
+– 輸出 –
+
+輸出你買完會剩下多少錢。
+
+如果不夠，以負數表示你會負債多少錢。
+
+– 輸入限制 –
+
+• 1 ≤ m, p ≤ 100, 000
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int m; //儲存整數類型變數
+	int p;
+	int price;
+	cin >> m >> p;
+	price = m - p;
+        cout <<price<< endl;
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193437601-cb007354-cbd5-4365-ab37-08c32252d5ad.png)
+![image](https://user-images.githubusercontent.com/96654161/193437604-6f2f527e-ca2b-41ea-8803-7e90dc4e12a2.png)
+
