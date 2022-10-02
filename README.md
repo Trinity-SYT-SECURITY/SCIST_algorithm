@@ -67,7 +67,7 @@ int main()
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193436295-26241663-e2f5-4037-873c-fbc9880aef6d.png)
 
-### day1 作業一
+### 第一節 作業一
 
 **Input**
 There is no input for this problem.
@@ -87,15 +87,15 @@ int main()
 {
 	int a,b; //儲存整數類型變數
 	cin >> a >> b; //輸入
-    cout << "Hello World!\n";//輸出
-    cout << "a=" << a <<"\n";
-    cout << "b=" << b << "\n";
+        cout << "Hello World!\n";//輸出
+        cout << "a=" << a <<"\n";
+        cout << "b=" << b << "\n";
 	return 0;
 	
 }
 ```
 
-### day1 作業二
+### 第一節 作業二 (延伸)
 – 輸入 –
 
 輸入兩個整數 a 和 b 代表要複述的整數。
@@ -126,7 +126,7 @@ int main()
 
 ![image](https://user-images.githubusercontent.com/96654161/193437054-1aba9279-92de-4a51-b517-c443fedea9e2.png)
 
-### day1 作業三
+### 第一節 作業三 (必做)
 – 輸入 –
 
 輸入兩個正整數 a 和 b，數字用來代表你或你朋友。先出現的數字表示是上次優先的。
@@ -165,7 +165,7 @@ int main()
 ![image](https://user-images.githubusercontent.com/96654161/193437418-5828d3bb-893b-4c9d-8731-5122e5513dee.png)
 ![image](https://user-images.githubusercontent.com/96654161/193437426-0fb011c3-a02e-4aac-951b-1b5656844df4.png)
 
-### day1 作業四
+### 第二節 作業一(必做)
 – 輸入 –
 
 輸入兩個正整數 m 和 p，代表你手上擁有 m 元，以及遊戲賣價 p 元。
