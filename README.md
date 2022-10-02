@@ -12,6 +12,12 @@
 
 > https://toj.tfcis.org/oj/info/
 
+> Kattis：https://open.kattis.com/
+> Uva：https://onlinejudge.org/
+> TOJ：https://toj.tfcis.org/oj/
+> AtCoder：https://atcoder.jp/
+> Codeforces：https://codeforces.com/
+
 > 把問題算對，最短時間完成
 
 初始程式:
@@ -67,4 +73,48 @@ Output should contain one line, containing the string “Hello World!”.
 
 ![image](https://user-images.githubusercontent.com/96654161/193436426-7b090c1e-a835-4d04-93ba-b33dd07f0c34.png)
 
+#### 輸入
 
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b; //儲存整數類型變數
+	cin >> a >> b; //輸入
+    cout << "Hello World!\n";//輸出
+    cout << "a=" << a <<"\n";
+    cout << "b=" << b << "\n";
+	return 0;
+	
+}
+```
+
+### 題目二
+– 輸入 –
+
+輸入兩個整數 a 和 b 代表要複述的整數。
+
+– 輸出 –
+
+以「Do you want to say $a$ and $b$ ??」的格式複述，並將文中「$a$」替換為輸入的整數 a，「$b$」替換為輸入的整數 b。
+
+– 輸入限制 –
+
+• |a|, |b| ≤ 1000
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b; //儲存整數類型變數
+	cin >> a >> b; //輸入
+    cout << "Do you want to say "<< a <<" and "<< b <<" ??";
+	return 0;
+	
+}
+
+```
