@@ -199,3 +199,17 @@ int main()
 ![image](https://user-images.githubusercontent.com/96654161/193437601-cb007354-cbd5-4365-ab37-08c32252d5ad.png)
 ![image](https://user-images.githubusercontent.com/96654161/193437604-6f2f527e-ca2b-41ea-8803-7e90dc4e12a2.png)
 
+### 第二節 作業二(必做)
+
+**Jack-O'-Lantern Juxtaposition**
+
+Every year, Pumpkin Pete comes up with a couple of different Jack-O’-Lantern ideas for his annual Halloween special. He stacks them up on haystacks for everyone to enjoy and take pictures with. To make sure that there’s a wide variety of displays, he wants to make sure many possible Jack-O’-Lanterns designs are available. He has come up with many eye, nose, and mouth designs and would like to know how many unique designs are possible. He needs your help to set up the displays before the special kicks off!
+
+**Input**
+The input consists of one line which contains three integers. The first,**N**, indicates the number of eye designs. The second,**T**, indicates the number of nose designs. The third, **M** indicates the number of mouth designs. All three values are in the range [1,500].
+
+**Output**
+Output a single line containing the number of different possible Jack-O’-Lantern designs.
+
+
+![image](https://user-images.githubusercontent.com/96654161/193438000-069e753d-a2a3-4931-a8ba-e19a06dff356.png)
