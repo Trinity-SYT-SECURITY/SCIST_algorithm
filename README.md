@@ -261,6 +261,187 @@ long long num = 299792458LL * 10000000000LL;//LL = long long
 
 ![image](https://user-images.githubusercontent.com/96654161/193441773-97eaa4fa-54bc-4822-976c-4dae453f5f8e.png)
 
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b;
+	cin >> a >> b;
+	//comparison operator
+	// >
+	// <
+	// >=
+	// <=
+	// == 等於
+	// != 不等於
+	//0 or not 0
+	if (a == b)
+	{
+		cout << "equal!!!\n";
+		
+	}
+	else
+	{
+		cout << "nooooo.......\n";
+	}
+	cout << "a: " << a << " b:" << b << "\n";
+	
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193443627-c5a88567-fc56-42e0-8fa6-7acd504cd8af.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b;
+	bool alive;
+	cin >> a >> b;
+	alive = (a>b);
+	cout << "cond:" << alive << "\n";
+	cout << "true:" << true <<"\n";
+	cout << "false:" << false <<"\n";
+	
+	if (alive)
+	{
+		cout << "TRUE!!!\n";
+		
+	}
+	else
+	{
+		cout << "false.......\n";
+	}
+	
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193443822-365f8ab2-653e-4206-bf35-04785d254509.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b;
+	bool alive;
+	cin >> a >> b;
+	//logical operator
+	//and &&
+	// or ||
+	// not !
+	//if (a <= b <= a+b)
+	
+	if (b >= a && b <= a+a)
+	{
+		cout << "TRUE!!!\n";
+		
+	}
+	else
+	{
+		cout << "false.......\n";
+	}
+	alive = (a>b);
+	if (!alive)
+	{
+		cout<<"NOMEOW...\n";
+	}
+	else
+	{
+		cout<<"OKKK\n";
+		
+	}
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193444109-1743c6c9-9b05-4b73-9801-5685477edc5e.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b,c, fit;
+	cin >> a >> b >> c ;
+	fit = 0;
+	if (a > 10)
+	{
+		fit +=1;
+	}
+	if (b > 10)
+	{
+		fit +=1;
+	}
+	if (c > 10)
+	{
+		fit ++;
+	}
+	
+	cout << "cout: "<<fit <<"\n";
+	return 0;
+	
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193444356-a477b295-340f-476d-a0f3-77847b419b10.png)
+
+閏年
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int year;
+	bool leap;
+	
+	cin >> year;
+	if (year % 4 ==0)
+	{
+		if (year % 100 == 0)
+		{
+			if (year %400 == 0)
+			{
+				//cout << "yes\n";
+				leap = true;
+			}
+			else
+			{
+				//cout << "no\n";
+				leap = false;
+				
+			}
+		}
+		else
+		{
+			//cout << "yes\n";
+			leap = true;
+		}
+		
+	}
+	else
+	{
+		 //cout << "not\n";
+		 leap = false;
+	}
+	//把結果保留，最後處理
+	if (leap)
+	{
+		cout << "leap!\n";
+	}
+	else
+	{
+		cout << "not leap\n";
+	}
+	
+	return 0;
+	
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193444649-a93add38-b595-4aff-8b39-832706295936.png)
+
+
 
 ### 第二節 作業二(必做)
 
