@@ -112,9 +112,12 @@ int main()
 {
 	int a,b; //儲存整數類型變數
 	cin >> a >> b; //輸入
-    cout << "Do you want to say "<< a <<" and "<< b <<" ??";
+    cout << "Do you want to say "<< a <<" and "<< b <<" ??\n";
 	return 0;
 	
 }
 
 ```
+![image](https://user-images.githubusercontent.com/96654161/193437078-9b256860-d4e5-4a57-aa04-7b99153dd739.png)
+
+![image](https://user-images.githubusercontent.com/96654161/193437054-1aba9279-92de-4a51-b517-c443fedea9e2.png)
