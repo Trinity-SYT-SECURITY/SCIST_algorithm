@@ -901,6 +901,49 @@ int main(){
 ![image](https://user-images.githubusercontent.com/96654161/193458973-e21d567c-5544-472c-8673-574d083b7618.png)
 
 
+### 第三節 作業六(必做)
 
+數學中的一個常見問題是確定給定點位於哪個像限。有四個像限，編號從至 ，如下圖所示：
 
+![image](https://user-images.githubusercontent.com/96654161/193459872-dac2a8c4-888f-4b7f-b27d-e6fc30920675.png)
+
+![image](https://user-images.githubusercontent.com/96654161/193459891-b471d465-ff3d-4d39-8b67-bd0d3c107b17.png)
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	float x,y;
+	cin >> x>>y;
+	
+	if (x>0 && y>0)
+	{
+		cout << "1"<<endl;
+	}
+	else
+	if (x<0 && y>0)
+	{
+		cout << "2"<<endl;
+	}
+	else
+	if (x<0 && y<0)
+	{
+		cout << "3"<<endl;
+	}
+	else
+	if (x>0 && y<0)
+	{
+		cout << "4"<<endl;
+	}
+	
+	
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193461067-5c2e66d4-095d-4d34-a062-e7f7b076ca7a.png)
 
