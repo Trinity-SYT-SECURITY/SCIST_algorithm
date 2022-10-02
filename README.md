@@ -1005,3 +1005,36 @@ int main(){
 
 ![image](https://user-images.githubusercontent.com/96654161/193464602-c2eea224-bed3-468c-9dad-f570e7b30e55.png)
 
+### 第三節 作業八(必做)
+
+![image](https://user-images.githubusercontent.com/96654161/193467496-bdababdd-b636-44e3-b15b-598f8e55d0ed.png)
+
+求長方形第四個未知座標
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b,c,d,e,f;
+    while(cin >> a >> b){
+        cin >> c >> d;
+        cin >> e >> f;
+        
+        if (a == c){
+            if (f == b) cout << e << " " << d << endl;
+            else cout << e << " " << b << endl;
+            
+        }
+        else{
+            if (b == d) cout << a << " " << f << endl;
+            else cout << a << " " << d << endl;
+            
+        }
+    }
+    
+    
+}
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193467475-92d69ada-03ed-456e-b5f0-7af9a56931e4.png)
