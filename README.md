@@ -429,13 +429,15 @@ int main(){
  cin >> a >> b;
  
  //兩件事情擇一發生
+ 
+ // 可能都發生，或是都不發生
  if (a-b <= 0)
  {
  	cout << "meow..\n";
- 	
+ 	a-=b;
  }
  //else不可單獨出現
- else
+ else //or  if (a-b > 0)
  {
  	
  	cout << "noflag..\n";
@@ -447,3 +449,40 @@ int main(){
 ```
 
 ![image](https://user-images.githubusercontent.com/96654161/193442428-087514b3-456b-40fc-9d10-57ab832badc3.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+ int a;
+ cin >> a ;
+//level >= 100 ->S
+//level >= 80 ->A
+//level >= 50 ->B
+//level < 50 ->C
+
+ if (a >= 100)
+ {
+ 	cout << "S\n";
+ }
+ else // 要先滿足上個條件式，才會繼續往下
+ {
+ 	if (a >= 80)
+ 	{
+ 		cout <<"A\n";
+ 	}
+ 	else
+ 	{
+ 		if(a>=50)
+ 		{
+ 			cout<<"B\n";
+ 		}
+ 		else
+ 		{
+ 			cout <<"C\n";
+ 		}
+ 	}
+ }
+}   
+```
+![image](https://user-images.githubusercontent.com/96654161/193442948-cc4635c1-573c-4f1d-bbfa-6d2cc137a6b9.png)
