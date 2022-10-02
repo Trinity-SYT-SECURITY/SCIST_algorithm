@@ -600,8 +600,6 @@ int main(){
 
 ## 條件式
 
-
-
 ```cpp
 #include <iostream>
 using namespace std;
@@ -667,3 +665,41 @@ int main(){
 }   
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193442948-cc4635c1-573c-4f1d-bbfa-6d2cc137a6b9.png)
+
+### 第三節 作業一(必做)
+– 輸入 –
+
+輸入為一個整數 n 代表某天的人數變動，以正數代表加入，負數代表退出。
+
+– 輸出 –
+
+輸出 |n|。
+
+– 輸入限制 –
+
+• 0 ≤ |n| ≤ 2, 147, 483, 647
+
+![image](https://user-images.githubusercontent.com/96654161/193445395-12bc44ff-51ad-4d47-814d-89dcbe21f6f1.png)
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	int i;
+	
+	cin >> i;
+	
+	cout << abs(i)<<"\n";
+	
+	return 0;
+	
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193446153-2f658b28-fd3a-4ae7-be81-2970fe6ba57e.png)
+![image](https://user-images.githubusercontent.com/96654161/193446159-46016fc9-05f1-42fe-9c0b-71a60c3eee9b.png)
+
