@@ -947,3 +947,61 @@ int main(){
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193461067-5c2e66d4-095d-4d34-a062-e7f7b076ca7a.png)
 
+### 第三節 作業七(必做)
+
+– 輸入 –
+
+輸入為一個正整數 n 代表要判斷的數字。
+
+– 輸出 –
+
+輸出是否為他要的數字。如果是，輸出「GREAT!!」；如果不是，輸出「OAQ」。
+
+– 輸入限制 –
+
++ 1 ≤ n ≤ 2, 147, 483, 647
+
+![image](https://user-images.githubusercontent.com/96654161/193464652-5bb0572c-7e3c-44f2-bb9b-f9256b3d9fce.png)
+
+> 7777 就是數字完全相同的四位數，但 8787 就不是。而 666 不是四位數，因此也不是。
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	int n,unit1,ten2,hundred3,thousand;
+	cin >> n;
+	
+	unit1 = n / 1 % 10; //取個位數
+	ten2 = n / 10 % 10;
+	hundred3 = n / 100 % 10;
+	thousand = n / 1000% 10;
+	
+	if (n % 10000 == n)
+	{
+		if (unit1 == ten2 && ten2 == hundred3 && hundred3 == thousand && thousand == unit1)
+		{
+			cout << "GREAT!!" <<endl;
+		}
+		else
+		{
+			cout << "OAQ" <<endl;
+		}
+	}
+	else
+	{
+		cout << "OAQ" <<endl;
+	}
+		
+
+	return 0;
+	
+}
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193464602-c2eea224-bed3-468c-9dad-f570e7b30e55.png)
+
