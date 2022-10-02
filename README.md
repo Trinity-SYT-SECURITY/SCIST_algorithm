@@ -95,6 +95,8 @@ int main()
 }
 ```
 
+>定義變數後都要注意有沒有初始化過
+
 ### 第一節 作業二 (延伸)
 – 輸入 –
 
@@ -199,6 +201,67 @@ int main()
 ![image](https://user-images.githubusercontent.com/96654161/193437601-cb007354-cbd5-4365-ab37-08c32252d5ad.png)
 ![image](https://user-images.githubusercontent.com/96654161/193437604-6f2f527e-ca2b-41ea-8803-7e90dc4e12a2.png)
 
+## 運算
+有加減乘除順序
+
+```cpp
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+ int a,b,c;
+ cin >> a >> b>>c;
+ c = b;
+ b = 1000;
+ 
+cout <<" b + 1 = "<< b+1 << "\n";
+cout <<" b - 1 = "<< b-1 << "\n";
+cout <<" b * 1 = "<< b*1 << "\n";
+cout <<" b / 1 = "<< b/1 << "\n";
+cout <<" b % 1 = "<< b%1 << "\n";
+
+cout << "b...:" << b*100/50<< "\n";//b...:2000
+cout << "b...:" << b/100*50<< "\n";//b...:500
+//要注意運算優先度
+
+cout << "b...:" << b+10*5<< "\n";//b...:1050
+cout << "b...:" << (b+10)*5<< "\n";//b...:5050
+//要改變運算優先度，一定要用小括號
+
+a = b += 5;
+cout << "b += 5" << a << "\n";
+return 0;
+	
+}
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193440793-40fb7710-d92f-43a7-8c55-b122517d3a28.png)
+
+[C++數值大小限制](https://learn.microsoft.com/zh-tw/cpp/cpp/data-type-ranges?view=msvc-170)
+
+超過位元的話可以使用 **long long** 宣告變數，此可以儲存更大數值範圍
+
+![image](https://user-images.githubusercontent.com/96654161/193441120-b6e3ba0a-ce01-41cd-9937-2bc53b80ade3.png)
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+int numnum = 299792458 * 10000000000;
+long long num1 = 299792458 * 10000000000;
+long long num = 299792458LL * 10000000000LL;//LL = long long
+
+ cout << numnum << "\n"<< num1 << "\n"<< num;
+
+}   
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193441773-97eaa4fa-54bc-4822-976c-4dae453f5f8e.png)
+
+
 ### 第二節 作業二(必做)
 
 **Jack-O'-Lantern Juxtaposition**
@@ -276,4 +339,111 @@ int main()
 
 ![image](https://user-images.githubusercontent.com/96654161/193438544-434c8142-1ba0-4ebc-b3f4-0a110866cb88.png)
 
+### 第二節 作業四(必做)
 
+**Speed of Light**
+
+地球和太陽之間的平均距離約為 149597870700 公尺。
+
+應用在天文學上，日常通用的單位實在小得可憐。為了避免天文學家算那種長得死人的數字或是因為老花眼看錯各種科學記號上十的次方，有些天才就想到了使用光的行進來測量距離：如同大家所知，一光年(Lightyear, LY)被定義為光在一年之內前進的距離。
+
+地球和太陽之間的平均距離約為 0.00001522070015221 光年。
+
+噢。
+
+顯然需要更多單位才能應付不同的尺度。因此，天文學家引入了光秒(Light-second)，光分(light-minute)，光時(light-hour)...等等。
+
+地球和太陽之間的平均距離約為8.3 光分。 舒服多了。
+
+但這時由出現了一個問題：這些各式各樣單位，換算成我們熟悉的單位又是多長?
+
+請寫一個程式來幫助可憐的天文學家。
+
+
+輸入說明
+本題沒有輸入。
+
+輸出說明
+依序將以下六種種單位
+
+	光秒	Light-second(LS)
+	光分	Light-minute(LM)
+	光時	Light-hour(LH)
+	光日	Light-day(LD)
+	光週	Light-week(LW)
+	光年	Light-year(LY)
+
+換算成公尺，以下列格式輸出：
+
+1 [unit] is [number] metres.
+
+範例輸入
+本題沒有輸入。
+
+
+範例輸出
+1 Light-second(LS) is 299792458 metres.
+1 Light-minute(LM) is XXXXXXXXX metres.
+1 Light-hour(LH) is XXXXXXXXX metres.
+1 Light-day(LD) is XXXXXXXXX metres.
+1 Light-week(LW) is XXXXXXXXX metres.
+1 Light-year(LY) is XXXXXXXXX metres.
+
+
+提示：
+光速 c = 299792458 m/s
+一年有365天，一周有7天，一天有24小時，一小時有60分鐘，一分鐘有60秒。
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+    unsigned long long num = 299792458;
+    
+    cout << "1 Light-second(LS) is " << num << " metres."<< endl;
+    num *=60;
+    cout << "1 Light-minute(LM) is "  << num << " metres."<< endl;
+    num *= 60;
+    cout << "1 Light-hour(LH) is "  << num << " metres."<< endl;
+    num*= 24;
+    
+    unsigned long long day = num;
+    cout << "1 Light-day(LD) is "  << day << " metres."<< endl;
+    cout << "1 Light-week(LW) is "  << day*7 << " metres."<< endl;        
+    cout << "1 Light-year(LY) is "  << day*365 << " metres."<< endl;    
+
+}   
+```
+![image](https://user-images.githubusercontent.com/96654161/193441170-2c3cc0ef-94cc-452a-8f33-cb1524603981.png)
+
+
+## 條件式
+
+
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+ int a,b;
+ cin >> a >> b;
+ 
+ //兩件事情擇一發生
+ if (a-b <= 0)
+ {
+ 	cout << "meow..\n";
+ 	
+ }
+ //else不可單獨出現
+ else
+ {
+ 	
+ 	cout << "noflag..\n";
+ }
+ 
+ return 0;
+ 
+}   
+```
+
+![image](https://user-images.githubusercontent.com/96654161/193442428-087514b3-456b-40fc-9d10-57ab832badc3.png)
