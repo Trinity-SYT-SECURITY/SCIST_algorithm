@@ -807,15 +807,98 @@ int main(){
 
 • 0 ≤ s ≤ 100
 
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	int S;
+	cin >> S;
+	
+	if (S==100)
+	{
+		cout << "S"<<endl;
+	}
+	else
+	if (S>=90)
+	{
+		cout << "A"<<endl;
+	}
+	else
+	if (S>=80)
+	{
+		cout << "B"<<endl;
+	}
+	else 
+	if (S>=70)
+	{
+		cout << "C"<<endl;
+	}
+	else 
+	if (S>=60)
+	{
+		cout << "D"<<endl;
+	}
+	else 
+	{
+		cout << "F"<<endl;
+	}
+		
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193457705-413e93e2-151d-484d-80d0-f018acaee190.png)
+
+### 第三節 作業五(必做)
 
 
+– 輸入 –
 
+輸入為四個相異整數 X0、X1、X2、X3，其中 X0、X1 依序為敵艦的左端點與右端點座標，
 
+X2、X3 依序為島風所發射的魚雷左端點與右端點座標。
 
+– 輸出 –
 
+若能夠命中，輸出「yes」；否則輸出「no」。
 
+– 輸入限制 –
 
++ −109 ≤ X0 < X1 ≤ 109
++ −109 ≤ X2 < X3 ≤ 109
++ X0、X1、X2、X3 兩兩皆不相等。
 
+將敵艦看成一維數線上的一條線段，發射的魚雷投影到該數線上也會形成一條線段，若兩條線段重疊的面積大於 0 則判定此次魚雷命中。
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	//X0、X1 依序為敵艦的左端點與右端點座標
+	//X2、X3 依序為島風所發射的魚雷左端點與右端點座標
+	int X0,X1,X2,X3;
+	cin >> X0>>X1>>X2>>X3;
+	if ((X0 <=X2 && X2<=X1) || (X0<=X3 && X3<=X1) || (X2 <=X0 && X1 <= X3))
+	{
+		cout << "yes"<<endl;
+	}
+	else
+	{
+		cout << "no"<<endl;
+	}
+		
+	return 0;
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193458973-e21d567c-5544-472c-8673-574d083b7618.png)
 
 
 
