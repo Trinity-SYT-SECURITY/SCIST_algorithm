@@ -1011,6 +1011,8 @@ int main(){
 
 求長方形第四個未知座標
 
+![image](https://user-images.githubusercontent.com/96654161/193467782-49b001e0-6226-4fcc-a80a-e0ab949f4086.png)
+
 ```cpp
 #include <iostream>
 using namespace std;
