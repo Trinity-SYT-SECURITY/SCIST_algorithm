@@ -7,3 +7,18 @@
 
 ![image](https://user-images.githubusercontent.com/96654161/193434257-2d1dbc73-e448-41ae-9aab-76c919b7ef84.png)
 
+> 把問題算對，最短時間完成
+
+初始程式:
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "HI\n";
+	return 0;
+	
+}
+```
+
