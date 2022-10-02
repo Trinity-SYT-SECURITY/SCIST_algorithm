@@ -67,7 +67,7 @@ int main()
 ```
 ![image](https://user-images.githubusercontent.com/96654161/193436295-26241663-e2f5-4037-873c-fbc9880aef6d.png)
 
-### 第一節 作業一
+### 第一節 作業一 (必做)
 
 **Input**
 There is no input for this problem.
