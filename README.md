@@ -703,3 +703,60 @@ int main(){
 ![image](https://user-images.githubusercontent.com/96654161/193446153-2f658b28-fd3a-4ae7-be81-2970fe6ba57e.png)
 ![image](https://user-images.githubusercontent.com/96654161/193446159-46016fc9-05f1-42fe-9c0b-71a60c3eee9b.png)
 
+### 第三節 作業二(必做)
+
+– 輸入 –
+
+輸入為兩個正整數 p、q，其中 p 代表賽亞人自身戰鬥力，q 代表對手的戰鬥力。
+
+– 輸出 –
+
+輸出「true」代表探測器故障了，輸出「false」則代表沒故障。
+
+– 輸入限制 –
+
+• 1 ≤ p, q ≤ 999, 999
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+int main(){
+	
+	int p,q;
+	cin >> p >> q;
+	
+	if (q>p)
+	{
+		cout << "true"<< "\n";
+	}
+	else
+	{
+		cout << "false"<< "\n";
+	}
+	
+	return 0;
+	
+	
+}
+```
+![image](https://user-images.githubusercontent.com/96654161/193446474-eb5dcdfa-a190-4f06-a432-81a487caaf5c.png)
+
+### ### 第三節 作業三(必做)
+
+– 輸入 –
+
+輸入三個整數 a、b、n，其中 a 為範圍下限，b 為範圍上限，n 為想詢問的目標數值。
+
+– 輸出 –
+
+如果落在守備範圍內，輸出「yes」；如果不是，輸出「no」。落在邊界上也算守備範圍內。
+
+– 輸入限制 –
+
+• 1 ≤ a ≤ b ≤ 2, 147, 483, 647
+
+• 1 ≤ n ≤ 2, 147, 483, 647
+
